@@ -64,11 +64,11 @@ function App() {
           </tr>
           {contacts.map((contact, index) => (
             <tr key={contact.id}>
-              <td><img src={contact.pictureUrl} alt="Picture" width="50px" /></td>
+              <td><img src={contact.pictureUrl} alt="Picture" width="80px" /></td>
               <td>{contact.name}</td>
               <td>{contact.popularity.toFixed(2)}</td>
               {contact.wonOscar ? <td>🏆</td> : <td></td>}
-              {contact.wonEmmy ? <td>🏆</td> : <td></td>}
+              <td>{contact.wonEmmy && <p>🏆</p> }</td>
               <td><button onClick={() => handleClick(contact.id)}>Delete</button></td>
             </tr>
           ))}

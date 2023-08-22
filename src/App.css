@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+button {
+  margin: 34px;
+  border: 2px solid;
+}
+
+th {
+  padding: 0px 3px 0px 3x;
+}
+
+table, th, td {
+  border: 2px solid;
+}
